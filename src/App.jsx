@@ -12,6 +12,7 @@ import Footer from "./components/Footer";
 import { ProductDetail } from "./pages/product/ProductDetail";
 import { ThemeProvider } from "./components/ThemeContext";
 import ThemeToggle from "./components/ThemeToggle";
+import AdminPage from "./components/AdminPage";
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
             <Route path="/cart" element={<Cart />} />
             <Route path="/favorite" element={<Favorite />} />
             <Route path="/thankyou" element={<ThankYou />} />
+            <Route path="/admin" element={<AdminPage />} />
             <Route path="*" element={<Error />} />
           </Routes>
           <Footer image={ggMobile} />
