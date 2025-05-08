@@ -1,15 +1,12 @@
 import React, { useEffect, useState } from "react";
 import ThankYou from "../pages/ThankYou";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 const AdminPage = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [isLogin, setIsLogin] = useState(true);
-
-  useEffect(() => console.log(username, password), [username, password]);
-
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   function inputUserChange(e) {
     setUsername(e.target.value);
@@ -76,7 +73,7 @@ const AdminPage = () => {
             <button
               className="me-3 py-1 px-3 "
               style={{ borderRadius: "5px" }}
-              onClick={() => navigate("/")}
+              // onClick={() => navigate("/")}
             >
               Cencel
             </button>
