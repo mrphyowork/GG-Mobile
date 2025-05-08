@@ -10,7 +10,7 @@ const Cart = () => {
   const navigate = useNavigate();
 
   return (
-    <div>
+    <div style={{ height: "90%" }}>
       <h1 className="my-3">Your Cart Items</h1>
       <div className="container d-flex justify-content-between">
         <div className="">

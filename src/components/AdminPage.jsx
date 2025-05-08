@@ -21,7 +21,7 @@ const AdminPage = () => {
   }
 
   function handleClick(e) {
-    e.preventDefault();
+    // e.preventDefault();
     if (username === "user" && password === "password") {
       toggleLogin();
     } else if (username !== "user") {
